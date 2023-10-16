@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home </a></li>
+                <li><a href="#about"> About Me </a></li>
+                <li><a href="#portfolio"> Projects </a></li>
+                <li><a href="#blogs">My Blogs </a></li>
+                <li><a href="#contact"> Contacts </a></li>
+                <img src="icons/cross.png" height="24" width="24" class="menu" onclick="closemenu()">
+            </ul>
+            <img src="icons/menu.png" height="34" width="32" class="menu" onclick="openemenu()">
+        </nav>
+        <div class="header-text">
+            <p>Data Scientist<img src="icons/ds.png" height="38" width="48"></p>
+            <h1>Hi, I am <span>Dhiraj </span> Pant<br>From Nepal</h1><br>
+            <a href="Resume/Dhiraj Data Science Resume.pdf" download class="btnn">Download CV</a>
+        </div>
+    </div>
+ </div>
+ <!--------about------------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/aboutme.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>Hello, I'm Dhiraj Pant,from the charming town of Mahendranagar, Nepal.
+                I am a dedicated Data Scientist with a passion of exploring insights hidden within the data
+                & unraveling the stories concealed in numbers and patterns.</p> <br>
+                <p>I'm an great believer in the power of data to drive meaningful change and innovation.
+                As a continuous learner, I embrace each & every challenges whether big or small as opportunities
+                to expand my knowledge and skills so I'm always open to new learning opportunities, collaborations, and challenges.</p><br>
+                <p>Thank you for visiting my portfolio website. I look forward to connecting with fellow data enthusiasts,IT professionals & potential collaborators.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')"><b>Skills</b></p>
+                    <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                    <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><b><img src="icons/excel.png" height="20" width="21"> Excel/Sheets</span></li>
+                        <li><span><img src="icons/sql.png" height="20" width="21"> MySQL/SQL</span></li>
+                        <li><span><img src="icons/tableau.png" height="20" width="21"> Tableau</span></li>
+                        <li><span><img src="icons/python.png" height="20" width="21"> Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn)</span></li>
+                        <li><span><img src="icons/ml.png" height="20" width="21"> Machine Learning & Deep Learning</span></li>
+                        <li><span><img src="icons/git.png" height="20" width="21"> Git & GitHub</span></li></b>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><b><img src="icons/da.png" height="20" width="21"> Data Analyst Intern | MeriSkill </b></span></li>
+                        <li><span>October 2023 - November 2023</span></li>
+                        <li><span>•	Worked with Sales dataset to identify trends, top-selling products, and revenue metrics for business decision-making.</span></li>
+                        <li><span>•	Created a Machine learning model using Diabetes Patients dataset to predict whether a patient has diabetes based on certain diagnostic measurements included in the dataset</span></li>
+                        <li><span>•	Effectively cleaned, performed Feature engineering & basic statistical analysis and created visualizations to extract meaningful insights from the HR analytics dataset.</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><img src="icons/cmp.png" height="20" width="21"><b> Bachelor of Engineering - BE, Computer </b></span></li>
+                        <li><span> Far Western University, Nepal </span></li>
+                        <li><span>2021-Expected (2025)</span></li> <br>
+                        <li><span><img src="icons/sce.png" height="20" width="21"><b> Intermediate in Science - I. Sc </b></span></li>
+                        <li><span> Morning Glory Higher Secondary School, Nepal</span></li>
+                        <li><span>2018-2020</span></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+  </div>
+  <!-- ------Projects------ -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work1.jpg">
+                <div class="layer">
+                    <h3>Heart Diseases Prediction</h3>
+                    <p>This Machine Learning model computes and predicts the patient 
+                        cardiovascular health after it has obtained essential data from the human body.</p>
+                        <a href="https://github.com/dhirajpant/Heart-Disease-Prediction---Logistic-Regression.git"><img src="icons/link.png"></a>                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work2.jpg">
+                <div class="layer">
+                    <h3>EDA on Threads App Reviews</h3>
+                    <p>The EDA will explore the Threads app reviews and enables the understanding of user satisfaction,app performance,
+                        and identification of emerging patterns.</p>
+                        <a href="https://github.com/dhirajpant/EDA-on-threads-app-reviews.git"><img src="icons/link.png"></a>                        
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work3.jpg">
+                <div class="layer">
+                    <h3>EDA on Netflix</h3>
+                    <p>This EDA will explore the Netflix dataset and enables the understanding of various contents available in Netflix, their ratings, release years and countries</p>
+                    <a href="https://github.com/dhirajpant/EDA-on-Netflix.git"><img src="icons/link.png"></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+<!-- -----blogs------ -->
+<div id="blogs">
+    <div class="container">
+        <h1 class="sub-title">My Blogs</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/blog1.png">
+                <div class="layer">
+                    <h3>Use and Downsides of Outliers</h3>
+                    <p>This Blog post explains my views on how outliers in a dataset are detrimental to data analysis as well as 
+                        useful for various data analysis process
+                    </p>
+                        <a href="https://medium.com/@dhirajpant.ad/use-and-downsides-of-outliers-b0e5c074e3b5"><img src="icons/link.png"></a>                </div>
+            </div>
+            <div class="work">
+                <img src="Images/data.jpg">
+                <div class="layer">
+                    <h3>Most Valuable Commodity in 21st Century - Data</h3>
+                    <p>This Blog post explains my views on how the data has become the most valuable commodity while raising important ethical and 
+                        privacy concerns in 21st century.
+                    </p>
+                        <a href="https://medium.com/@dhirajpant.ad/most-valuable-commodityin-21st-century-data-849bab37a3e2"><img src="icons/link.png"></a>                        
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/datascientist.png">
+                <div class="layer">
+                    <h3>The Sexiest Job of 2021: Data Scientist</h3>
+                    <p>This Blog post explains my views on how the data scientist became the "sexiest job" in 21st century & rapid increase in data anad data driven decisions.</p>
+                    <a href="https://medium.com/@dhirajpant.ad/the-sexiest-job-of-2021-data-scientist-9b60f00212bc"><img src="icons/link.png"></a>                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- -----contact---- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="'sub-title">Contact Me </h1><br>
+            <p><img src="icons/gmail.png" height="15" width="20"> official.dhirajpant@gmail.com</p>
+            <p><img src="icons/call.png" height="15" width="20"> +97798XXXXXXXX</p>
+            <div class="social-icons">
+                <p> <br>
+                <a href="https://www.facebook.com/official.dhirajpant" target="blank"><img align="center" src="icons/facebook.png"  height="40" width="40" /></a>
+                <a href="https://linkedin.com/in/dhiraj-pant-283b9a271/" target="blank"><img align="center" src="icons/github.png"  height="40" width="40" /></a>
+                <a href="https://kaggle.com/dhirajpant" target="blank"><img align="center" src="icons/kaggle.png" alt="dhirajpant" height="40" width="40" /></a>
+                <a href="https://linkedin.com/in/dhiraj-pant-283b9a271/" target="blank"><img align="center" src="icons/linkedin.png"  height="40" width="40" /></a>
+                <a href="https://twitter.com/dhirajj_pant" target="blank"><img align="center" src="icons/x.png" alt="dhirajj_pant" height="40" width="40" /></a></p>
+            </div>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023. All rights reserved</p>
+    </div>
+  </div>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGZ1f8zSQL0-VASpnFdD4MglRVi7fmScCe51eWC8Zw2eL0K_WPSbJxob4pMrmwhNNE/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Mesaage sent sucessfully"
+            setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    var sidemenu =document.getElementById("sidemenu")
+
+    function openemenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+  </script>
+</body>
+</html>
